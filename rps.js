@@ -2,12 +2,12 @@ const playGame = function (userChoice) {
     userChoice = userChoice.toUpperCase();
 
     let computerChoice = Math.floor(Math.random() * 3) + 1;
-    if( computerHandInt==1) {
-        return 'ROCK';
-    } else if(computerHandInt==2) {
-        return 'PAPER';
+    if( computerChoice == 1) {
+        computerChoice = 'ROCK';
+    } else if(computerChoice ==2) {
+        computerChoice = 'PAPER';
     } else {
-        return 'SCISSORS';
+        computerChoice = 'SCISSORS';
     }
 
     let message = "Computer chose: " + computerChoice + ". User chose: " + userChoice;
