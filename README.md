@@ -28,23 +28,28 @@
 
 Method 1
 ```
-Name:
-Description:
-Example using it:
+Name: String Length
+Description: This property returns the number of characters in a string.
+Example using it: var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("demo").innerHTML = txt.length; //26
 ```
 
 Method 2
 ```
-Name:
-Description:
-Example using it:
+Name: Finding a String in a String
+Description:A string representing the value to search for. If no string is explicitly provided,Characters in a string are indexed from left to right.
+Example using it: var str = "Please locate where 'locate' occurs!";
+var pos = str.lastIndexOf("locate");
+document.getElementById("demo").innerHTML = pos;
 ```
 
 Method 3
 ```
-Name:
-Description:
-Example using it:
+Name: charCodeAt()
+Description:returns the unicode of the character at a specified index in a string:
+The method
+Example using it:var str = "HELLO WORLD";
+document.getElementById("demo").innerHTML = str.charCodeAt(0);
 ```
 
 ## [License](LICENSE)
