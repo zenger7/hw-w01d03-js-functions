@@ -1,55 +1,55 @@
-const playGame = function (a) {
+const playGame = function (playA) {
   var win = " ";
-  let b;
+  let playB;
 
   var ran = Math.floor((Math.random() *3) + 1);
 
   if (ran == 1) {
-    b = "Rock"
+    playB = "Rock"
   } else if (ran == 2) {
-    b = "Paper"
+    playB = "Paper"
   } else {
-    b = "Scissors"
+    playB = "Scissors"
   }
 
   // tie
-  if (a === b) {
+  if (playA === playB) {
     win = "tie";
     return "tie";
   }
 
   //------Rock
-  if (a === "Rock") {
-    if (a === "Rock" && b === "Paper") {
-      win = b;
+  if (playA === "Rock") {
+    if (playA === "Rock" && playB === "Paper") {
+      win = playB;
     }
-    if (a === "Rock" && b === "Scissors") {
-      win = a;
+    if (playA === "Rock" && playB === "Scissors") {
+      win = playA;
     }
 
   }
   //------Paper
-  if (a === "Paper") {
-    if (a === "Paper" && b === "Rock") {
-      win = a;
+  if (playA === "Paper") {
+    if (playA === "Paper" && playB === "Rock") {
+      win = playA;
     }
-    if (a === "Paper" && b === "Scissors") {
-      win = b;
+    if (playA === "Paper" && playB === "Scissors") {
+      win = playB;
     }
 
   }
   //----Scissors
-  if (a === "Scissors") {
-    if (a === "Scissors" && b === "Rock") {
-      win = b;
+  if (playA === "Scissors") {
+    if (playA === "Scissors" && playB === "Rock") {
+      win = playB;
     }
-    if (a === "Scissors" && b === "Paper") {
-      win = a;
+    if (playA === "Scissors" && playB === "Paper") {
+      win = playA;
     }
 
   }
-  console.log("the playr 1 " + a);
-  console.log("the playr 2 " + b);
+  console.log("the playr 1 " + playA);
+  console.log("the playr 2 " + playB);
 
 
 
