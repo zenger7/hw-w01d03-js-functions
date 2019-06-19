@@ -1,6 +1,6 @@
 //Write a function that chooses two random numbers (1-6) and returns them.
 //WIt should also return the sum.
- //BONUS: have your function take an argument of the # of dice to be rolled.
+//BONUS: have your function take an argument of the # of dice to be rolled.
 //Example: rollDice(3) // Dice rolled are 4, 2, and 7. Sum is 13.
 
 const randomNumber = function () {
@@ -11,7 +11,8 @@ const randomNumber = function () {
 
 const rollDice = function (roll = 2) {
   randomNumber();
-  while (roll > 2) {
+  let i = 0;
+  while (i < roll) {
     randomNumber();
     roll--;
   }
@@ -21,4 +22,4 @@ const rollDice = function (roll = 2) {
 }
 
 rollDice(6); // Dice rolled are 6 and 1. Sum is 7
-rollDice(3) // Dice rolled are 4, 2, and 3. Sum is 13.
+rollDice(3); // Dice rolled are 4, 2, and 3. Sum is 13.
