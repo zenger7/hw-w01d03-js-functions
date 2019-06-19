@@ -62,3 +62,4 @@ let t = Math.random
 playGame("Rock");
 playGame("Paper");
 playGame("Scissors");
+
